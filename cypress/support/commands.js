@@ -23,3 +23,24 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+// cypress/support/commands.js
+
+Cypress.Commands.add('login', (username, password) => {
+  cy.get('[data-test="username"]').type(username)
+  cy.get('[data-test="password"]').type(password)
+  cy.get('#login-button').click()
+})
+
+
+Cypress.Commands.add('preencherFormulario', ({ nome, email, renda, cpf, credito }) => {
+  if (nome) cy.get('#nome').clear().type(nome)
+  if (email) cy.get('#email').clear().type(email)
+  if (renda) cy.get('#renda').clear().type(renda)
+  if (cpf) cy.get('#cpf').clear().type(cpf)
+  if (credito) cy.get('#credito').clear().type(credito)
+})
+
+Cypress.Commands.add('botaoSolicitacaoDeCredito' , () => {
+  cy.get('[type="submit"]').click()
+})
