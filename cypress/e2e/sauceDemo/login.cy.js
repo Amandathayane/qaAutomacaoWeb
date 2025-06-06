@@ -44,7 +44,7 @@ context('Validação da funcionalidade de login', () => {
 
         //Assertions
         cy.get('[data-test="error"]').should('exist').should('be.visible')
-        .should('have.text','Epic sadface: Username do not match any user in this service')
+        .should('have.text','Epic sadface: Username and password do not match any user in this service')
 
     });
 
