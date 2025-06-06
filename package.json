@@ -1,0 +1,23 @@
+{
+  "name": "qaautomacaoweb",
+  "version": "1.0.0",
+  "description": "Repositório reervado para aulas da pós Graduação com foco em automação web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Amandathayane/qaAutomacaoWeb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Amandathayane/qaAutomacaoWeb/issues"
+  },
+  "homepage": "https://github.com/Amandathayane/qaAutomacaoWeb#readme",
+  "devDependencies": {
+    "cypress": "^14.4.1"
+  }
+}
